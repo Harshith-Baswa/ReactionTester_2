@@ -1,0 +1,83 @@
+ #shape {
+     padding:5px;
+     height: 3px;
+     width: 3px;
+     background-color: blue;
+     position: absolute;
+     transform: all 0.3 ease;
+     animation: myAnim 2s ease 0s 1 normal forwards;
+	 backdrop-filter: blur(10px);
+ }
+ @keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-65px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+}
+body{
+     background-image:url(backimg2.jpg);
+ }
+ h1 {
+     text-align: center;
+ }
+
+ p {
+     text-align: center;
+ }
+ @media screen and (max-width: 600px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+
+    #shape {
+        width: 100px !important;
+        height: 100px !important;
+        left: 20% !important;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
